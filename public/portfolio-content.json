@@ -1,0 +1,569 @@
+{
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-01-27",
+    "description": "Complete portfolio data for Takunda Christopher Maswi"
+  },
+  "personal": {
+    "firstName": "Takunda",
+    "middleName": "Christopher",
+    "lastName": "Maswi",
+    "fullName": "Takunda Christopher Maswi",
+    "title": "Systems Consultant & Full-Stack Developer",
+    "alternativeTitle": "IT Consultant & Data Analyst",
+    "tagline": "Turning complex problems into elegant, scalable systems that work.",
+    "description": "Developer-Consultant with 4+ years delivering enterprise solutions across audit, financial systems, and business automation. Combine consulting expertise (ISACA member, CISA pursuing) with production-grade development in TypeScript, React, and SQL.",
+    "dateOfBirth": "1996-06-14",
+    "nationality": "Zimbabwean",
+    "languages": [
+      "English (Fluent/Native)",
+      "Shona (Native)"
+    ],
+    "location": {
+      "city": "Harare",
+      "country": "Zimbabwe",
+      "address": "6 Quail Close, Mount Pleasant, Harare"
+    }
+  },
+  "contact": {
+    "email": "takmaswi@gmail.com",
+    "phone": "+263 78 395 2522",
+    "phoneFormatted": "+263783952522",
+    "linkedin": {
+      "url": "https://linkedin.com/in/takunda-christopher-maswi",
+      "username": "takunda-christopher-maswi",
+      "alternativeUrl": "https://linkedin.com/in/takunda-maswi-97672045"
+    },
+    "github": {
+      "url": "https://github.com/takmaswi",
+      "username": "takmaswi",
+      "repositories": 30
+    },
+    "availability": {
+      "status": "Available",
+      "forConsulting": true,
+      "forProjects": true,
+      "forFullTime": false
+    }
+  },
+  "stats": {
+    "yearsExperience": "4+",
+    "totalProjects": "30+",
+    "activeRepositories": 30,
+    "onTimeDelivery": "95%",
+    "clientRetention": "100%",
+    "auditsConducted": 3,
+    "concurrentEngagements": "8-12",
+    "timeSaved": "6+ hours per client/month",
+    "testingCoverageIncrease": "10x (50 → 5,000+ records)"
+  },
+  "projects": [
+    {
+      "id": "taku-payroll",
+      "name": "Taku-Payroll",
+      "filename": "taku-payroll.ts",
+      "category": "Production System",
+      "description": "Production payroll system for Zimbabwe market",
+      "longDescription": "Engineered production-grade payroll system with localized compliance for Zimbabwe market. Handles ZIMRA tax calculations, NSSA contributions, and statutory deductions with real-time reporting capabilities.",
+      "features": [
+        "Localized tax compliance (ZIMRA, NSSA)",
+        "Real-time statutory deduction calculations",
+        "Automated payslip generation and reporting",
+        "Zimbabwe-specific regulatory requirements"
+      ],
+      "impact": "70% faster payroll processing time",
+      "status": "Live",
+      "deploymentStatus": "Production",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "technicalDetails": {
+        "frontend": "React with TypeScript",
+        "backend": "Node.js with Express",
+        "database": "PostgreSQL",
+        "features": [
+          "Tax calculations",
+          "Compliance engine",
+          "Report generation"
+        ]
+      },
+      "githubUrl": "https://github.com/takmaswi/Taku-Payroll",
+      "isPrivate": true,
+      "order": 1
+    },
+    {
+      "id": "fairvalue-tracker",
+      "name": "Fairvalue-Tracker",
+      "filename": "fairvalue-tracker.tsx",
+      "category": "Task Management",
+      "description": "Real-time task management platform",
+      "longDescription": "Built real-time task management platform with Kanban interface, Firebase authentication, and role-based access control. Deployed for production team to manage concurrent client engagements.",
+      "features": [
+        "Kanban interface with drag-and-drop",
+        "Firebase authentication and role-based access",
+        "Real-time sync across team members",
+        "Project timeline tracking"
+      ],
+      "impact": "Managing 8-12 concurrent engagements effectively",
+      "status": "Production",
+      "deploymentStatus": "Deployed",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Firebase",
+        "Tailwind CSS"
+      ],
+      "technicalDetails": {
+        "frontend": "React with TypeScript",
+        "styling": "Tailwind CSS",
+        "backend": "Firebase Realtime Database",
+        "auth": "Firebase Authentication"
+      },
+      "githubUrl": "https://github.com/takmaswi/Fairvalue-Tracker",
+      "isPrivate": true,
+      "order": 2
+    },
+    {
+      "id": "taku-ai",
+      "name": "Taku-AI",
+      "filename": "taku-ai.py",
+      "category": "AI Automation",
+      "description": "AI-powered business automation platform",
+      "longDescription": "AI platform leveraging ChatGPT and Claude for intelligent business automation and workflow optimization. Integrates with n8n, Zapier, and Make for comprehensive process automation.",
+      "features": [
+        "LLM integration (ChatGPT, Claude)",
+        "Workflow automation (n8n, Zapier, Make)",
+        "Intelligent process optimization",
+        "Business workflow design"
+      ],
+      "impact": "Saved 6+ hours per client monthly",
+      "status": "Active",
+      "deploymentStatus": "Production",
+      "stack": [
+        "Python",
+        "LLM APIs",
+        "n8n",
+        "Zapier",
+        "Make"
+      ],
+      "technicalDetails": {
+        "language": "Python",
+        "apis": [
+          "OpenAI API",
+          "Anthropic API"
+        ],
+        "automation": [
+          "n8n",
+          "Zapier",
+          "Make"
+        ],
+        "features": [
+          "Workflow automation",
+          "AI integration",
+          "Process optimization"
+        ]
+      },
+      "githubUrl": "https://github.com/takmaswi/Taku-AI",
+      "isPrivate": false,
+      "order": 3
+    },
+    {
+      "id": "sql-audit-framework",
+      "name": "SQL Audit Framework",
+      "filename": "audit-framework.sql",
+      "category": "Enterprise Audit",
+      "description": "Enterprise audit testing automation",
+      "longDescription": "Developed comprehensive SQL framework that expanded audit testing coverage by 10x. Includes database schema design for financial transactions, compliance logging, and automated audit trails.",
+      "features": [
+        "Database schema design for audit trails",
+        "Automated compliance logging system",
+        "Transaction analysis and reporting",
+        "Financial data validation"
+      ],
+      "impact": "10x testing coverage expansion (50 → 5,000+ records)",
+      "status": "Production",
+      "deploymentStatus": "Deployed",
+      "stack": [
+        "SQL",
+        "PostgreSQL",
+        "SQL Server",
+        "MongoDB"
+      ],
+      "technicalDetails": {
+        "databases": [
+          "PostgreSQL",
+          "SQL Server",
+          "MongoDB"
+        ],
+        "features": [
+          "Schema design",
+          "Compliance logging",
+          "Audit trails",
+          "Data analysis"
+        ]
+      },
+      "githubUrl": null,
+      "isPrivate": false,
+      "order": 4
+    }
+  ],
+  "skills": {
+    "languages": {
+      "title": "Languages & Frameworks",
+      "items": [
+        "TypeScript (Advanced)",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Python",
+        "SQL",
+        "JavaScript",
+        "HTML/CSS",
+        "Express.js"
+      ],
+      "order": 1
+    },
+    "databases": {
+      "title": "Databases & Systems",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Firebase",
+        "SQL Server",
+        "REST API design",
+        "Database schema design",
+        "Real-time systems",
+        "Microservices patterns"
+      ],
+      "order": 2
+    },
+    "audit": {
+      "title": "IT Audit & Compliance",
+      "items": [
+        "COSO Framework",
+        "Internal Controls",
+        "Risk Assessment",
+        "SOX Audit",
+        "IT Audit Methodology",
+        "Financial Systems",
+        "Regulatory Requirements",
+        "ISACA Member"
+      ],
+      "order": 3
+    },
+    "automation": {
+      "title": "Automation & AI",
+      "items": [
+        "LLM Integration (ChatGPT, Claude)",
+        "Workflow Automation",
+        "n8n",
+        "Zapier",
+        "Make",
+        "Excel VBA",
+        "Business Process Optimization",
+        "AI Workflow Design"
+      ],
+      "order": 4
+    },
+    "tools": {
+      "title": "Tools & Platforms",
+      "items": [
+        "Git/GitHub",
+        "VS Code",
+        "Postman",
+        "Tableau",
+        "Excel",
+        "React DevTools",
+        "Node.js",
+        "Firebase Console"
+      ],
+      "order": 5
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": [
+        "Project Management",
+        "Team Leadership",
+        "Technical Documentation",
+        "Stakeholder Communication",
+        "Process Optimization",
+        "Requirements Analysis",
+        "Cross-functional Collaboration",
+        "Mentoring"
+      ],
+      "order": 6
+    }
+  },
+  "education": {
+    "university": {
+      "degree": "Bachelor of Science in Computer Information Systems",
+      "degreeAbbreviation": "B.Sc. (Honours)",
+      "institution": "Near East University",
+      "location": "Lefkosa, Cyprus",
+      "startDate": "2016-02",
+      "endDate": "2020-06",
+      "graduationDate": "June 22, 2020",
+      "gpa": "3.25",
+      "gpaScale": "4.0",
+      "standing": "Honours",
+      "studentNumber": "20158052",
+      "faculty": "Faculty of Economics and Administrative Sciences",
+      "department": "Computer Information Systems",
+      "totalCredits": 131,
+      "highlights": [
+        "Graduated with Honours",
+        "Final semester GPA: 3.80 (High Honour)",
+        "Completed graduation project and summer training",
+        "Strong performance in Software Engineering, Database Management, and Web Technologies"
+      ],
+      "relevantCourses": [
+        "Software Engineering",
+        "Database Management",
+        "Web Technologies",
+        "Information Systems Security",
+        "Object Oriented Programming",
+        "System Analysis Method",
+        "Internet Programming",
+        "Management Information Systems"
+      ]
+    },
+    "aLevel": {
+      "qualification": "Cambridge GCE A-Levels",
+      "institution": "St Georges College",
+      "location": "Harare, Zimbabwe",
+      "startDate": "2013-01",
+      "endDate": "2014-12",
+      "subjects": [
+        "Applied Information and Communication Technology (C)",
+        "Business Studies (C)",
+        "Mathematics (AS Level - E)"
+      ]
+    },
+    "oLevel": {
+      "qualification": "Cambridge IGCSE",
+      "institution": "St Georges College",
+      "location": "Harare, Zimbabwe",
+      "startDate": "2009-01",
+      "endDate": "2012-12",
+      "certificateNumber": "0039096722",
+      "subjects": [
+        "Biology",
+        "Business Studies",
+        "First Language English",
+        "Information and Communication Technology",
+        "Mathematics",
+        "Chemistry",
+        "Geography",
+        "Literature (English)",
+        "Physics"
+      ],
+      "grades": "4 B grades, 5 C grades"
+    }
+  },
+  "credentials": [
+    {
+      "name": "ISACA Member",
+      "organization": "ISACA - Harare Chapter",
+      "issueDate": "October 2024",
+      "expiryDate": null,
+      "status": "Active",
+      "membershipType": "Professional",
+      "credentialId": null,
+      "verificationUrl": null,
+      "description": "Professional membership in Information Systems Audit and Control Association",
+      "order": 1
+    },
+    {
+      "name": "CISA Candidate",
+      "organization": "ISACA",
+      "issueDate": null,
+      "expiryDate": null,
+      "status": "In Progress",
+      "targetCompletion": "Q1/Q2 2026",
+      "description": "Certified Information Systems Auditor certification in progress",
+      "order": 2
+    },
+    {
+      "name": "ICDL Certification",
+      "organization": "ICDL (International Computer Driving License)",
+      "issueDate": "December 2010",
+      "expiryDate": null,
+      "status": "Completed",
+      "modules": [
+        "Computer Essentials",
+        "Online Essentials",
+        "Word Processing",
+        "Spreadsheets",
+        "Using Databases",
+        "Presentation",
+        "IT Security"
+      ],
+      "totalModules": 7,
+      "description": "International certification for computer and IT skills",
+      "order": 3
+    },
+    {
+      "name": "TEFL Certification",
+      "organization": "TEFL",
+      "issueDate": "May 2024",
+      "expiryDate": null,
+      "status": "Completed",
+      "hours": 120,
+      "description": "Teaching English as a Foreign Language certification - 120-hour program",
+      "order": 4
+    }
+  ],
+  "experience": {
+    "current": {
+      "company": "Fairvalue Chartered Accountants",
+      "position": "Systems Consultant / IT Consultant",
+      "location": "Harare, Zimbabwe",
+      "startDate": "June 2021",
+      "endDate": "Present",
+      "duration": "4+ years",
+      "type": "Full-time",
+      "description": "Developer-Consultant delivering enterprise solutions across audit, financial systems, and business automation",
+      "responsibilities": [
+        "IT Audit & Controls",
+        "Systems Development & Optimization",
+        "Data & Process Automation",
+        "Leadership & Project Delivery"
+      ],
+      "achievements": [
+        {
+          "category": "IT Audit & Controls",
+          "items": [
+            "Conducted 3 comprehensive IT audits across Manufacturing, Financial Services, and NGO sectors",
+            "Assessed system controls, identified vulnerabilities, delivered remediation strategies",
+            "Maintained 95%+ on-time delivery rate and 100% client retention"
+          ]
+        },
+        {
+          "category": "Systems Development & Optimization",
+          "items": [
+            "Designed and built production-grade systems addressing business operational gaps",
+            "Engineered payroll system with localized compliance (Zimbabwe tax, NSSA, statutory deductions)",
+            "Built real-time task management platform (Kanban interface, Firebase authentication, role-based access)",
+            "Created financial automation reducing manual work by 6+ hours per client/month"
+          ]
+        },
+        {
+          "category": "Data & Process Automation",
+          "items": [
+            "Developed SQL framework expanding audit testing coverage by 10x (50 → 5,000+ records)",
+            "Designed database schemas for financial transactions, compliance logging, and audit trails",
+            "Implemented AI-powered workflow automation (ChatGPT, Zapier, n8n integrations)"
+          ]
+        },
+        {
+          "category": "Leadership & Project Delivery",
+          "items": [
+            "Managed 8-12 concurrent engagements with teams, achieving stakeholder satisfaction",
+            "Led technical requirements, solution design, and implementation across multiple clients",
+            "Mentored junior staff and coordinated complex project workflows"
+          ]
+        }
+      ]
+    },
+    "internships": [
+      {
+        "company": "Gigabyte Ltd (GogaByte M.Ş.)",
+        "position": "Software Development Intern",
+        "location": "Lefkosa, Cyprus",
+        "startDate": "May 2019",
+        "endDate": "July 2019",
+        "duration": "3 months",
+        "type": "Internship",
+        "description": "Internship support program for training qualified personnel in software development and services in the field of information technologies",
+        "certificateDate": "July 31, 2019",
+        "order": 1
+      },
+      {
+        "company": "Fairvalue Chartered Accountants",
+        "position": "IT Intern",
+        "location": "Harare, Zimbabwe",
+        "startDate": "July 2017",
+        "endDate": "April 2019",
+        "duration": "~2 years",
+        "type": "Internship",
+        "description": "IT support and systems assistance during university studies",
+        "order": 2
+      }
+    ]
+  },
+  "qualities": {
+    "personal": [
+      "Empathy",
+      "Diligence",
+      "Organization",
+      "Creativity",
+      "Honesty and Ethicality",
+      "Adaptability"
+    ],
+    "professional": [
+      "Results-oriented",
+      "Strategic thinker",
+      "Detail-oriented",
+      "Problem solver",
+      "Team player",
+      "Self-motivated"
+    ]
+  },
+  "interests": [
+    "Squash",
+    "Chess",
+    "Reading",
+    "Listening to music and podcasts",
+    "Technology trends",
+    "AI and automation"
+  ],
+  "professionalSummary": "Developer-Consultant with 4+ years delivering enterprise solutions across audit, financial systems, and business automation. Combine consulting expertise (ISACA member, CISA pursuing) with production-grade development in TypeScript, React, and SQL. Proven track record managing complex projects, optimizing processes, and building scalable systems. Known for translating business needs into technical solutions.",
+  "cta": {
+    "primary": {
+      "text": "Let's Talk",
+      "action": "contact",
+      "link": "#contact"
+    },
+    "secondary": {
+      "text": "View Work",
+      "action": "projects",
+      "link": "#work"
+    },
+    "email": {
+      "text": "Copy Email",
+      "action": "copy",
+      "value": "takmaswi@gmail.com"
+    },
+    "resume": {
+      "text": "Download Resume",
+      "action": "download",
+      "link": "/downloads/Takunda-Christopher-Maswi-Resume.pdf"
+    }
+  },
+  "seo": {
+    "title": "Takunda Christopher Maswi | Systems Consultant & Full-Stack Developer",
+    "description": "Developer-Consultant with 4+ years delivering enterprise solutions. TypeScript, React, SQL expert. ISACA member, CISA candidate. Based in Harare, Zimbabwe.",
+    "keywords": [
+      "Systems Consultant",
+      "Full-Stack Developer",
+      "IT Consultant",
+      "TypeScript Developer",
+      "React Developer",
+      "SQL Expert",
+      "IT Audit",
+      "ISACA",
+      "Zimbabwe",
+      "Harare"
+    ],
+    "ogImage": "/og-image.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/takunda-christopher-maswi",
+    "github": "https://github.com/takmaswi",
+    "email": "mailto:takmaswi@gmail.com"
+  }
+}
