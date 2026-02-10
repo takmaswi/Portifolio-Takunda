@@ -3,7 +3,7 @@
 const nextConfig = {
     output: 'export',
     basePath: '/Portifolio-Takunda',
-    assetPrefix: '/Portifolio-Takunda',
+    trailingSlash: true,
     images: {
         unoptimized: true,
     },
