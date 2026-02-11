@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takunda Maswi | Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a0a0a;
+            --accent: #d4af37;
+            --text-main: #232f3e;
+            --text-muted: #535b62;
+            --line: #e2e8f0;
+            --bg-offset: #f8fafc;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-size: 10pt;
+            width: 210mm;
+        }
+
+        .page {
+            padding: 0.75in;
+            position: relative;
+            background: white;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            margin-bottom: 35px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30pt;
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 10.5pt;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .subtitle span {
+            color: var(--accent);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 8px 30px;
+            font-size: 9pt;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .photo-sidebar {
+            width: 1.6in;
+        }
+
+        .photo-container {
+            width: 1.6in;
+            height: 1.6in;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: var(--primary);
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            /* "Nano Banana" Simulation: Multi-layer CSS filter stack for natural skin tones */
+            filter: sepia(0.4) hue-rotate(-15deg) saturate(1.2) brightness(1.3) contrast(1.05);
+            -webkit-filter: sepia(0.4) hue-rotate(-15deg) saturate(1.2) brightness(1.3) contrast(1.05);
+        }
+
+        .photo-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 70%, rgba(10, 10, 10, 0.5) 100%);
+            pointer-events: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+            break-inside: avoid;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 14pt;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 6px;
+            margin: 0 0 15px 0;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            margin-left: 20px;
+            background: var(--line);
+        }
+
+        .intro-text {
+            font-size: 11pt;
+            color: var(--text-main);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 25px;
+            break-inside: avoid;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .job-company {
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--primary);
+        }
+
+        .job-date {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 9pt;
+        }
+
+        .job-title-row {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-style: italic;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            font-size: 10.5pt;
+        }
+
+        .job-cat {
+            font-weight: 700;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin: 12px 0 6px 0;
+        }
+
+        ul {
+            margin: 0 0 15px 0;
+            padding-left: 18px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 6px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: -18px;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .skills-matrix {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .skill-group h3 {
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin: 0 0 10px 0;
+            color: var(--text-muted);
+        }
+
+        .skill-list {
+            font-size: 9.5pt;
+            line-height: 1.6;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        @media screen {
+            body {
+                background: #f1f5f9;
+                padding: 50px 0;
+            }
+
+            .page {
+                width: 210mm;
+                margin: 0 auto;
+                box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="header-main">
+                <h1>Takunda Christopher Maswi</h1>
+                <div class="subtitle">Senior IT Manager <span>|</span> Specialist Specialist Consultant</div>
+
+                <div class="contact-info">
+                    <div class="contact-link">Harare, Zimbabwe</div>
+                    <a href="mailto:takmaswi@gmail.com" class="contact-link">takmaswi@gmail.com</a>
+                    <div class="contact-link">+263 78 395 2522</div>
+                    <a href="https://linkedin.com/in/takunda-christopher-maswi"
+                        class="contact-link">linkedin.com/in/takunda-maswi</a>
+                    <a href="https://github.com/takmaswi" class="contact-link">github.com/takmaswi</a>
+                </div>
+            </div>
+            <div class="photo-sidebar">
+                <div class="photo-container">
+                    <img src="takunda_noir_editorial_1770638368871.png" alt="Takunda Maswi" class="profile-photo">
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Strategic Professional Overview</h2>
+            <div class="intro-text">
+                Visionary <strong>Senior IT Manager</strong> and Systems Consultant with 4+ years of specialized
+                experience in the Chartered Accounting sector. A versatile professional with a broad skillset that
+                bridges the gap between technical infrastructure, financial compliance, digital marketing, and data
+                analysis. Dedicated to delivering secure, compliant, and ROI-driven business operations while leading
+                teams and spearheading digital growth initiatives. Focused on practical, high-impact results that
+                benefit people and business alike.
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company">Fairvalue Chartered Accountants</span>
+                    <span class="job-date">June 2021 – Present</span>
+                </div>
+                <div class="job-title-row">
+                    <span>Senior IT Manager & Specialist Consultant</span>
+                    <span>Harare, Zimbabwe</span>
+                </div>
+
+                <div class="job-cat">IT Operations & Management</div>
+                <ul>
+                    <li><strong>Infrastructure Leadership:</strong> Directed the firm’s digital operations and led the
+                        migration of manual audit workflows to efficient cloud platforms, improving client data
+                        accessibility and security.</li>
+                    <li><strong>Modern IT Support:</strong> Managed firm-wide technical support using token-based
+                        ticketing systems to ensure timely resolution of complex IT issues for internal teams and
+                        clients.</li>
+                    <li><strong>Technical Mentorship:</strong> Developed and led professional development programs for
+                        staff, improving digital competency across the firm.</li>
+                </ul>
+
+                <div class="job-cat">Data Analysis & AML Compliance</div>
+                <ul>
+                    <li><strong>Data Analysis Specialist:</strong> Performed comprehensive data analysis for firm audits
+                        and internal operations, utilizing financial modeling and trend analysis to drive data-informed
+                        decisions.</li>
+                    <li><strong>AML Compliance Officer (2022 – Present):</strong> Appointed to oversee Anti-Money
+                        Laundering compliance; developed internal protocols and delivered key compliance trainings for
+                        the entire team.</li>
+                    <li><strong>Internal Controls:</strong> Evaluated and enhanced IT audit controls, identifying
+                        critical system risks and implementing remediation strategies.</li>
+                </ul>
+
+                <div class="job-cat">Digital Marketing & Strategic Growth</div>
+                <ul>
+                    <li><strong>Brand Positioning:</strong> Led the firm's digital marketing strategy, coordinating
+                        brand positioning across technical channels to increase lead generation and client engagement.
+                    </li>
+                    <li><strong>Process Optimization:</strong> Developed localized payroll systems (Taku-Payroll) and
+                        automation tools saving 6+ hours of manual processing per client monthly.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="page page-break">
+        <section>
+            <h2>Skills Matrix</h2>
+            <div class="skills-matrix">
+                <div class="skill-group">
+                    <h3>Management & Operations</h3>
+                    <div class="skill-list">IT Management, AML Compliance, Data Analysis, Staff Training, Token-based IT
+                        Ticketing, Internal Controls, Risk Management.</div>
+                </div>
+                <div class="skill-group">
+                    <h3>Business Software</h3>
+                    <div class="skill-list">Advanced MS Office Suite, QuickBooks, Slack, Digital Marketing Strategy,
+                        SEO, Stakeholder Relations.</div>
+                </div>
+                <div class="skill-group">
+                    <h3>Technical Implementation</h3>
+                    <div class="skill-list">TypeScript, React, Node.js, Python, SQL (PostgreSQL), REST API Design,
+                        Process Automation, Cybersecurity Essentials.</div>
+                </div>
+                <div class="skill-group">
+                    <h3>Personal Skills</h3>
+                    <div class="skill-list">Strategic Leadership, Mentorship, Versatility, Problem Solving, Professional
+                        Communication, Technical Documentation.</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Technical Projects</h2>
+            <ul>
+                <li><strong>Taku-Payroll:</strong> Built and maintained aLocalized payroll engine for the ZW market,
+                    including tax (ZIMRA) and statutory (NSSA) compliance reporting.</li>
+                <li><strong>Internal Workflow Tracker:</strong> Developed real-time internal management tools to
+                    coordinate team tasks and engagement timelines.</li>
+                <li><strong>Data Analysis Hub:</strong> Created custom SQL validation tools for large-scale audit
+                    testing and financial transaction analysis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education & Credentials</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-company">Bachelor of Science in Computer Information Systems (Honours)</span>
+                    <span class="job-date">2020</span>
+                </div>
+                <div class="job-title-row">
+                    <span>Near East University, Cyprus</span>
+                    <span>GPA: 3.25/4.0</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>Professional Credentials</h3>
+                <ul>
+                    <li><strong>ISACA Professional Member</strong> (Harare Chapter) – Since 2024</li>
+                    <li><strong>CISA Candidate</strong> (Targeting 2026)</li>
+                    <li><strong>TEFL Certified</strong> (May 2024)</li>
+                    <li><strong>ICDL Certification</strong> (International Computer Driving License)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>General Information</h2>
+            <div style="font-size: 9.5pt; display: grid; gap: 8px; color: var(--text-main);">
+                <div><strong>Languages:</strong> English (Native), Shona (Native)</div>
+                <div><strong>Interests:</strong> Squash, Chess, Technology Trends, Podcasts.</div>
+                <div><strong>Service Projects:</strong> Passionate about volunteering and helping the needy in our
+                    community.</div>
+            </div>
+        </section>
+
+        <div
+            style="margin-top: 40px; font-size: 8pt; color: var(--text-muted); text-align: center; border-top: 1px solid var(--line); padding-top: 10px;">
+            CV of Takunda Christopher Maswi • Senior IT Manager • Generated February 2026
+        </div>
+    </div>
+</body>
+
+</html>
